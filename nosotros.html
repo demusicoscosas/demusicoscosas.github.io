@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros - Worship and Grace</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        header {
+            background: #111;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo a {
+            color: white;
+            font-size: 1.8em;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+            padding: 5px 10px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #FFD700;
+        }
+
+        nav ul li a.active {
+            border-bottom: 2px solid #FFD700;
+        }
+
+        /* Contenido principal */
+        main {
+            display: flex;
+            flex: 1;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 20px;
+        }
+
+        .nosotros {
+            max-width: 900px;
+            width: 90%;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .nosotros h1 {
+            font-size: 2em;
+            color: #222;
+        }
+
+        .nosotros p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #444;
+        }
+
+        .mision-valores {
+            display: flex;
+            justify-content: space-between;
+            text-align: left;
+            margin-top: 30px;
+        }
+
+        .mision, .valores {
+            width: 48%;
+        }
+
+        .mision h2, .valores h2 {
+            font-size: 1.4em;
+            color: #111;
+        }
+
+        .valores ul {
+            padding-left: 20px;
+            list-style: disc;
+        }
+
+        .imagen-nosotros {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .imagen-nosotros img {
+            width: 80%;
+            max-width: 400px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #111;
+            color: white;
+            margin-top: auto;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: #FFD700;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+
+        /* 🔹 Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+                padding: 15px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+                padding-top: 10px;
+            }
+
+            .mision-valores {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .mision, .valores {
+                width: 100%;
+            }
+
+            .imagen-nosotros img {
+                width: 100%;
+                max-width: 350px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nosotros {
+                width: 95%;
+                padding: 20px;
+            }
+
+            .nosotros h1 {
+                font-size: 1.6em;
+            }
+
+            .mision h2, .valores h2 {
+                font-size: 1.2em;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html">WORSHIP AND GRACE</a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="nosotros.html" class="active">Sobre Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="nosotros">
+            <h1>Sobre Nosotros</h1>
+            <p>Somos una empresa dedicada a glorificar a Dios a través de la moda. Nos especializamos en la venta de polos y gorras con mensajes inspiradores, ofreciendo diseños modernos y materiales de alta calidad para quienes desean reflejar su fe en su estilo de vida.</p>
+            
+            <div class="mision-valores">
+                <div class="mision">
+                    <h2>Nuestra Misión</h2>
+                    <p>Brindar prendas cómodas, duraderas y con estilo, asegurando la satisfacción de nuestros clientes a través de productos de alta calidad.</p>
+                </div>
+                <div class="valores">
+                    <h2>Nuestros Valores</h2>
+                    <ul>
+                        <li>Calidad</li>
+                        <li>Innovación</li>
+                        <li>Compromiso</li>
+                        <li>Sostenibilidad</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="imagen-nosotros">
+                <img src="img/FOTO LAINI E ISAEL.png" alt="Equipo de Worship and Grace">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Worship and Grace - Todos los derechos reservados</p>
+        <p><a href="politica-privacidad.html">Política de Privacidad</a> | <a href="terminos.html">Términos y Condiciones</a></p>
+    </footer>
+
+</body>
+</html>

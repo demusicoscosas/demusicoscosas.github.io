@@ -3,123 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Footer con Flexbox</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #181A1B;
-            color: white;
-        }
-        footer {
-            display: flex;
-            justify-content: space-between;
-            padding: 40px;
-            background-color: #0D0F10;
-            flex-wrap: wrap;
-            align-items: flex-start;
-        }
-        .footer-section {
-            flex: 1;
-            min-width: 150px;
-            margin-right: 20px;
-        }
-        .footer-section h4 {
-            margin-bottom: 10px;
-        }
-        .footer-section ul {
-            list-style: none;
-            padding: 0;
-        }
-        .footer-section ul li a {
-            text-decoration: none;
-            color: white;
-            display: block;
-            margin-bottom: 5px;
-        }
-        .newsletter {
-            flex: 2;
-        }
-        .newsletter input {
-            padding: 8px;
-            width: 200px;
-            margin-right: 5px;
-        }
-        .newsletter button {
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            padding: 8px 12px;
-            cursor: pointer;
-        }
-        .newsletter button:hover {
-            background-color: #0056b3;
-        }
-        .footer-bottom {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 40px;
-            background-color: #0D0F10;
-        }
-        .social-icons a {
-            color: white;
-            margin: 0 10px;
-            font-size: 20px;
-            text-decoration: none;
-        }
-        .social-icons a:hover {
-            color: #007BFF;
-        }
-    </style>
+    <title>Tienda de Polos y Gorras</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+    <header>
+        <div class="logo">WORSHIP AND GRACE</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Polos Overside Para Cristianos</h1>
+        <p>Descubre nuestra colección única y luce tu estilo.</p>
+        <a href="productos.html" class="boton-ver-productos">Ver Productos</a>
+    </section>
+
     <footer>
-        <div class="footer-section">
-            <h4>Section</h4>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">FAQs</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-        </div>
-        <div class="footer-section">
-            <h4>Section</h4>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">FAQs</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-        </div>
-        <div class="footer-section">
-            <h4>Section</h4>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">FAQs</a></li>
-                <li><a href="#">About</a></li>
-            </ul>
-        </div>
-        <div class="newsletter">
-            <h4>Subscribe to our newsletter</h4>
-            <p>Monthly digest of what's new and exciting from us.</p>
-            <input type="email" placeholder="Email address">
-            <button>Subscribe</button>
-        </div>
+        <p>&copy; 2025 WORSHIP AND GRACE - Todos los derechos reservados</p>
     </footer>
-    <div class="footer-bottom">
-        <span>&copy; 2024 Company, Inc. All rights reserved.</span>
-        <div class="social-icons">
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-        </div>
-    </div>
+
 </body>
 </html>
